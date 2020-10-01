@@ -1,6 +1,6 @@
 # check pattern before run service.
-stack_yml=docker-compose.yml
-stack_name=vueadmin
+stack_yml=docker-compose-mongo.yml
+stack_name=mongo
 if [ $1 = 'swarm' ]; then 
   # Method1: run docker service by docker-stack.yml
   docker stack ls | grep -i "$stack_name"
