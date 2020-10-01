@@ -2,7 +2,7 @@ version: "3.8"
 services:
   web:
     image: lqwangxg/node
-    command: npm run start
+    command: sh -c "npm run serve"
     volumes:
       - .:/app
     ports:
